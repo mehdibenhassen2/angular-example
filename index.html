@@ -1,0 +1,52 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Display CSV file---mehdi ben hassen</title>
+	<!-- SPELLS -->
+  <script type="text/javascript" src="angular.min.js"></script>
+  <script type="text/javascript" src="angular-route.js"></script>
+	<script type="text/javascript" src="module.js"></script>
+	<script type="text/javascript" src="javascript.js"></script>
+	<script src='https://rawgit.com/iominh/ng-scrollbars/master/src/scrollbars.js'></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	
+
+<div ng-app="upload_app" class="content">
+  <div ng-controller="csvCtrl">
+    <h1>Welcome to the interface to Upload and display CSV data</h1>
+    <label><strong>Information</strong></label>
+    <p id="info_file">----------</p>
+    <label> <strong>Upadte and correction:</strong></label>
+    <p id="update_file1">------------</p>
+    <p id="update_file2"></p>
+
+    <textarea id="textZone" style="display:none"></textarea>
+    <input type="file" id="selectedFile" onchange="loadFileAsText()" class="button_selection">
+    <button ng-click="processData()" class="button_selection">Display CSV file as Table </button>
+    <div id="divID">
+      <table>
+        <tr ng-repeat="x in data">
+          <td ng-repeat="y in x">{{ y }}</td>
+        </tr>
+      </table>
+    </div>
+
+
+
+
+
+	</div>
+
+
+
+
+
+</body>
+</html>
+
+

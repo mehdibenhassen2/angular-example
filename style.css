@@ -1,0 +1,80 @@
+
+html{
+	width: 100%;
+	height: 100%;
+	background-color:gray;
+
+}
+body{
+	width: 80%;
+	min-height: 100%;
+	position: relative;
+	margin-left: 10%;
+	background-color: white;
+	margin-top: -20px;
+	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	padding-bottom: 20px;
+
+
+}
+h1{
+	font-size: 30px;
+font-style:italic;
+	width: 80%;
+
+	text-align: center;
+}
+
+.content{
+
+	padding-top: 50px;
+	padding-left: 50px;
+}
+
+.input_space{
+
+
+min-width:  300px;
+
+}
+
+ng-view{
+
+	margin-left: -40px;
+}
+#inProcess, #info_file{
+
+	font-size: 15px;
+	color: blue;
+	margin: auto;
+    
+    
+    padding-left: 20%;
+    padding-bottom: 10%;
+}
+.content{
+
+	
+}
+.button_selection{
+	font-size: 15px;
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+
+}
+
+table, th, td {
+   border: 1px solid black;
+   padding:5px;
+}
+table {
+   border-collapse: collapse;
+   margin:10px;
+   	width: 100%;
+	min-height: 100%;
+	position: relative;
+	margin-left: 0%;
+	background-color: white;
+	margin-top: 20px;
+	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	padding-bottom: 20px;
+}
